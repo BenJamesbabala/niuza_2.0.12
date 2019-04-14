@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TopBar -->
+    <attr name="topbarTitle" format="reference|string" />
+    <!-- title 对齐方式，靠左还是居中 -->
+    <attr name="topbarTitleAlign" format="enum">
+        <enum name="center" value="0"/>
+        <enum name="left" value="1"/>
+    </attr>
+    <declare-styleable name="TopBar">
+        <attr name="topbarTitle"/>
+        <!-- title 对齐方式，靠左还是居中 -->
+        <attr name="topbarTitleAlign" />
+        <!-- 标题背景-->
+        <attr name="titleBackground" format="reference" />
+        <!-- 如果左钮是图片模式，必须设置此项 -->
+        <attr name="leftButtonDrawable" format="reference" />
+        <!-- 如果左按钮是文字模式，必须设置此项 -->
+        <attr name="leftButtonText" format="reference|string" />
+        <!-- 如果右按钮是图片模式，必须设置此项 -->
+        <attr name="rightButtonDrawable" format="reference" />
+        <!-- 如果右按钮是文字模式，必须设置此项 -->
+        <attr name="rightButtonText" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsTextAlpha" format="float" />
+        <attr name="pstsTextSelectedAlpha" format="float" />
+
+        <attr name="pstsTextStyle">
+            <flag name="bold" value="0x00000001" />
+            <flag name="italic" value="0x00000002" />
+            <flag name="normal" value="0x00000000" />
+        </attr>
+        <attr name="pstsTextSelectedStyle">
+            <flag name="bold" value="0x00000001" />
+            <flag name="italic" value="0x00000002" />
+            <flag name="normal" value="0x00000000" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MultipleSelectionButton">
+        <attr name="ascv_unselectedTextColor" format="reference" />
+        <attr name="ascv_unselectedColor" format="reference" />
+        <attr name="ascv_selectedColor" format="reference" />
+        <attr name="ascv_selectedTextColor" format="reference" />
+        <attr name="ascv_items" format="reference" />
+        <attr name="ascv_values" format="reference" />
+        <attr name="ascv_equalWidth" format="boolean" />
+        <attr name="ascv_stretch" format="boolean" />
+        <attr name="ascv_defaultSelection" format="integer" />
+        <attr name="ascv_identifier" format="string" />
+
+    </declare-styleable>
+
+    <!-- 编译属性重复时 http://blog.csdn.net/u012478759/article/details/52160266 -->
+    <attr name="centered" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="selectedColor" format="color" />
+
+    <declare-styleable name="CirclePageIndicator">
+        <attr name="fillColor" format="color" />
+        <attr name="pageColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="snap" format="boolean" />
+        <attr name="android:orientation" />
+        <attr name="android:background" />
+        <attr name="centered"/>
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth"/>
+    </declare-styleable>
+
+    <declare-styleable name="LinePageIndicator">
+        <attr name="lineWidth" format="dimension" />
+        <attr name="gapWidth" format="dimension" />
+        <attr name="centered"/>
+        <attr name="strokeColor"/>
+        <attr name="strokeWidth"/>
+        <attr name="android:background" />
+        <attr name="selectedColor"/>
+        <attr name="unselectedColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="UnderlinePageIndicator">
+        <attr name="fades" format="boolean" />
+        <attr name="fadeDelay" format="integer" />
+        <attr name="fadeLength" format="integer" />
+        <attr name="selectedColor"/>
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="TitlePageIndicator">
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerIndicatorStyle">
+            <enum name="none" value="0" />
+            <enum name="triangle" value="1" />
+            <enum name="underline" value="2" />
+        </attr>
+        <attr name="footerIndicatorHeight" format="dimension" />
+        <attr name="footerIndicatorUnderlinePadding" format="dimension" />
+        <attr name="footerPadding" format="dimension" />
+
+        <attr name="linePosition">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+        </attr>
+        <attr name="selectedBold" format="boolean" />
+        <attr name="titlePadding" format="dimension" />
+        <attr name="topPadding" format="dimension" />
+        <attr name="topbarTitle" />
+        <attr name="topbarTitleAlign" />
+
+        <attr name="android:background" />
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="selectedColor"/>
+        <attr name="clipPadding" format="dimension" />
+        <attr name="footerColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="ptrRefreshableViewBackground" format="reference|color"/>
+        <attr name="ptrOverScroll" format="reference|boolean"/>
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean"/>
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean"/>
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+        <attr name="ptrRotateDrawableClockStyle" format="reference|boolean" />
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+        <attr name="ptrHeaderRefreshViewShow" format="reference|boolean" />
+        <attr name="ptrFooterRefreshViewShow" format="reference|boolean" />
+
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <attr name="ptrDrawable" format="reference" />
+        <attr name="ptrDrawableStart" format="reference" />
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <attr name="ptrMode">
+            <flag name="both" value="0x00000003" />
+            <flag name="disabled" value="0x00000000" />
+            <flag name="manualOnly" value="0x00000004" />
+            <flag name="pullDownFromTop" value="0x00000001" />
+            <flag name="pullFromEnd" value="0x00000002" />
+            <flag name="pullFromStart" value="0x00000001" />
+            <flag name="pullUpFromBottom" value="0x00000002" />
+        </attr>
+        <attr name="ptrAnimationStyle">
+            <flag name="flip" value="0x00000001" />
+            <flag name="rotate" value="0x00000000" />
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="avatarCover" format="reference" />
+    <attr name="percentLeft" format="integer" />
+    <attr name="percentTop" format="integer" />
+    <attr name="percentRight" format="integer" />
+    <attr name="percentBottom" format="integer" />
+
+    <attr name="unselectedAlpha" format="float" />
+    <attr name="unselectedSaturation" format="float" />
+    <attr name="unselectedScale" format="float" />
+    <attr name="maxRotation" format="integer" />
+    <attr name="scaleDownGravity" format="float" />
+    <!--<attr name="actionDistance" format="integer">-->
+        <!--<enum name="auto" value="2147483647" />-->
+    <!--</attr>-->
+    <!--<attr name="itemPosition">-->
+        <!--<enum name="bottom" value="2" />-->
+        <!--<enum name="center" value="1" />-->
+        <!--<enum name="one" value="3" />-->
+        <!--<enum name="top" value="0" />-->
+    <!--</attr>-->
+    <attr name="itemTitle" format="reference|string" />
+    <attr name="itemSubTitle" format="reference|string" />
+    <attr name="hasNewFlag" format="boolean" />
+
+    <!--<attr name="ProgressColor">-->
+        <!--<enum name="circle" value="2" />-->
+        <!--<enum name="grey" value="1" />-->
+        <!--<enum name="white" value="0" />-->
+    <!--</attr>-->
+    <!--<attr name="ptrRefreshableViewBackground" format="reference|color" />-->
+    <!--<attr name="ptrOverScroll" format="reference|boolean" />-->
+
+    <attr name="rotate_width" format="integer" />
+    <attr name="rotate_height" format="integer" />
+    <attr name="progress_width" format="integer" />
+    <!--<attr name="mode">-->
+        <!--<enum name="left" value="0" />-->
+        <!--<enum name="right" value="1" />-->
+    <!--</attr>-->
+    <attr name="viewAbove" format="reference" />
+    <attr name="viewBehind" format="reference" />
+    <attr name="behindOffset" format="dimension" />
+    <attr name="behindWidth" format="dimension" />
+    <attr name="behindScrollScale" format="float" />
+    <!--<attr name="touchModeAbove">-->
+        <!--<enum name="fullscreen" value="1" />-->
+        <!--<enum name="margin" value="0" />-->
+        <!--<enum name="none" value="2" />-->
+    <!--</attr>-->
+    <!--<attr name="touchModeBehind">-->
+        <!--<enum name="fullscreen" value="1" />-->
+        <!--<enum name="margin" value="0" />-->
+        <!--<enum name="none" value="2" />-->
+    <!--</attr>-->
+    <attr name="shadowDrawable" format="reference" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="fadeEnabled" format="boolean" />
+    <attr name="fadeDegree" format="float" />
+    <attr name="selectorEnabled" format="boolean" />
+    <attr name="selectorDrawable" format="reference" />
+    <attr name="onDrawable" format="reference" />
+    <attr name="offDrawable" format="reference" />
+    <attr name="thumbDrawable" format="reference" />
+    <attr name="thumb_margin" format="reference|dimension" />
+    <attr name="thumb_marginTop" format="reference|dimension" />
+    <attr name="thumb_marginBottom" format="reference|dimension" />
+    <attr name="thumb_marginLeft" format="reference|dimension" />
+    <attr name="thumb_marginRight" format="reference|dimension" />
+    <attr name="thumb_width" format="reference|dimension" />
+    <attr name="thumb_height" format="reference|dimension" />
+    <attr name="onColor" format="reference|color" />
+    <attr name="offColor" format="reference|color" />
+    <attr name="thumbColor" format="reference|color" />
+    <attr name="thumbPressedColor" format="reference|color" />
+    <attr name="animationVelocity" format="integer" />
+    <attr name="Radius" format="integer" />
+    <attr name="measureFactor" format="float" />
+    <attr name="insetLeft" format="reference|dimension" />
+    <attr name="insetRight" format="reference|dimension" />
+    <attr name="insetTop" format="reference|dimension" />
+    <attr name="insetBottom" format="reference|dimension" />
+    <attr name="waveViewStyle" format="reference" />
+
+    <!--<attr name="titleBackground" format="reference" />-->
+    <!--<attr name="leftButtonDrawable" format="reference" />-->
+    <!--<attr name="leftButtonText" format="reference|string" />-->
+    <!--<attr name="rightButtonDrawable" format="reference" />-->
+    <!--<attr name="rightButtonText" format="reference|string" />-->
+
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiLinePageIndicatorStyle" format="reference" />
+    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    <attr name="above_wave_color" format="color" />
+    <attr name="blow_wave_color" format="color" />
+    <attr name="progress" format="integer" />
+    <!--<attr name="wave_length">-->
+        <!--<enum name="large" value="1" />-->
+        <!--<enum name="little" value="3" />-->
+        <!--<enum name="middle" value="2" />-->
+    <!--</attr>-->
+    <!--<attr name="wave_height">-->
+        <!--<enum name="large" value="1" />-->
+        <!--<enum name="little" value="3" />-->
+        <!--<enum name="middle" value="2" />-->
+    <!--</attr>-->
+    <!--<attr name="wave_hz">-->
+        <!--<enum name="normal" value="2" />-->
+        <!--<enum name="fast" value="1" />-->
+        <!--<enum name="slow" value="3" />-->
+    <!--</attr>-->
+</resources>

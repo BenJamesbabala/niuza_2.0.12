@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/splash_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/splashImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_image" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/splash_text_color" android:id="@+id/hostText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="www.niuza.com" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/splash_text_color" android:id="@+id/slogonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="牛杂网只收集性价比" />
+    </LinearLayout>
+</RelativeLayout>

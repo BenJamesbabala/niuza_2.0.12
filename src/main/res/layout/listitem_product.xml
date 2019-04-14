@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/productImage" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="12.0dip" android:src="@drawable/pic_default" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:layout_toRightOf="@+id/productImage" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/bt_cm_textsize_16" android:textColor="@color/text_color_4_title" android:id="@+id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="房间爱发发激发发髻房间爱发 附加分季度房间爱发激发甲方甲方啊积分" android:maxLines="2" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="@dimen/bt_cm_textsize_14" android:textColor="@color/text_color_4_tip" android:layout_gravity="center|left" android:id="@+id/subTitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016年1月29日" android:maxLines="1" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/bt_cm_textsize_14" android:textColor="@color/text_color_4_tip" android:layout_gravity="center|right" android:id="@+id/hotText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气：31C" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

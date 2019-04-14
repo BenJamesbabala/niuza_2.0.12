@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rootLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.ksoichiro.android.observablescrollview.ObservableWebView android:id="@+id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/bottomBar" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@+id/bottomBar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#8fffffff" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@+id/backBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webview_back_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@+id/forwardBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webview_forward_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@+id/refreshBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webview_refresh_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@+id/browserBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/webview_to_browse_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#88000000" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/CommonDialogLayout" android:background="@drawable/common_dialog_bg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffb8b8b8" android:gravity="center" android:id="@+id/CommonDialogTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/CommonDialogCustomContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/CommonDialogCancel" android:background="@drawable/common_dialog_button_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+    </LinearLayout>
+</RelativeLayout>

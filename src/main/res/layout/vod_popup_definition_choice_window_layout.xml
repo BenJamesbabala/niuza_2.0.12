@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.library.vod.PopupDefinitionChoiceView android:orientation="vertical" android:background="@color/vod_player_definition_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="@drawable/vod_player_text_btn_select_episode_selector" android:layout_gravity="center_horizontal" android:id="@+id/vod_definition_choice_btn_1080" android:background="@drawable/vod_player_btn_popup_definition_selector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_definition_ultra" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vod_player_definition_choice_line_1080" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vod_player_popupview_line" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="@drawable/vod_player_text_btn_select_episode_selector" android:layout_gravity="center_horizontal" android:id="@+id/vod_definition_choice_btn_720" android:background="@drawable/vod_player_btn_popup_definition_selector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_definition_high" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vod_player_definition_choice_line_720" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vod_player_popupview_line" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="12.0sp" android:textColor="@drawable/vod_player_text_btn_select_episode_selector" android:layout_gravity="center_horizontal" android:id="@+id/vod_definition_choice_btn_480" android:background="@drawable/vod_player_btn_popup_definition_selector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_definition_normal" />
+    </RelativeLayout>
+</com.xunlei.library.vod.PopupDefinitionChoiceView>

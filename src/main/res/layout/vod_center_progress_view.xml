@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xunlei.library.vod.VodCenterProgressView android:orientation="vertical" android:background="@drawable/vod_player_center_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vod_center_progress_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:contentDescription="@null" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/vod_center_progress_bar" android:layout_width="126.0dip" android:layout_height="4.0dip" android:layout_marginTop="18.0dip" android:progressDrawable="@drawable/vod_player_center_progress_drawable" style="?android:attr/progressBarStyleHorizontal" />
+</com.xunlei.library.vod.VodCenterProgressView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xunlei.library.pulltorefresh.PullToRefreshScrollView android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottomBar"
+        android:background="@color/black"
+        app:ptrAnimationStyle="flip">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="91dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/bt_cm_textsize_16"
+                    android:textColor="@color/black"
+                    android:id="@+id/titleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/bt_cm_textsize_14"
+                    android:textColor="#ff666666"
+                    android:autoLink="web"
+                    android:id="@+id/detailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:lineSpacingExtra="5.0dip" />
+                <WebView android:id="@+id/detailWebView"
+                    android:paddingTop="15.0dip"
+                    android:scrollbars="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/othersLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@+id/otherItemLayout1" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/otherImageView1" android:layout_width="96.0dip" android:layout_height="96.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/otherTitleText1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/otherItemLayout2" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/otherImageView2" android:layout_width="96.0dip" android:layout_height="96.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/otherTitleText2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/otherItemLayout3" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/otherImageView3" android:layout_width="96.0dip" android:layout_height="96.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/otherTitleText3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xunlei.library.pulltorefresh.PullToRefreshScrollView>
+    RelativeLayoutbackground="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/bottomBar" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottomBar" android:background="#afffffff" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/feedbackBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/feedback_btn" android:scaleType="center" android:layout_centerVertical="true" />
+        <ImageButton android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/commentBtn" android:background="@drawable/comment_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_toRightOf="@id/feedbackBtn" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_color_4_tip" android:id="@+id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            <View android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_color_4_tip" android:id="@+id/hotText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/buyBtn" android:background="@color/detail_btn_color" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="购买链接" android:layout_alignParentRight="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@+id/quanBtn" android:background="@color/detail_btn_color" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="先领券" android:layout_toLeftOf="@id/buyBtn" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

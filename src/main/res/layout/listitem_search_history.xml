@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:textColor="@color/text_color_4_title" android:ellipsize="marquee" android:id="@+id/historyText" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:singleLine="true" android:drawableLeft="@drawable/search_inside" android:drawablePadding="8.0dip" style="?android:attr/dropDownItemStyle" />
+    <ImageButton android:id="@+id/clearBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/search_delete_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>
